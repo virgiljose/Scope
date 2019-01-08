@@ -19,10 +19,9 @@ export default class Search extends Component {
 
   handleSubmit() {
 
-    // zomato api key: 667c1b9e37e268fa42277abb6b6d87d2
     const first = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='
     const second = '&radius=160000&type=restaurant&keyword='
-    const third = '&key=AIzaSyB7yher8Q1-RILH7bZYXRHUpVI6lH5mbZA';
+    const third = '&key=YOURAPIKEY';
 
     var query = first + this.props.navigation.state.params.currLatitude + ',' + this.props.navigation.state.params.currLongitude + second + this.state.text + third;
     query = query.replace(/ /g,"+");

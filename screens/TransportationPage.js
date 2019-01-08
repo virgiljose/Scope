@@ -94,7 +94,7 @@ export default class TransportationPage extends Component {
     const firstDriving = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&mode=driving&origins='
     const firstWalking = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&mode=walking&origins='
     const second = '&destinations='
-    const third = '&key=AIzaSyA3AGOyiOO_TH_J3MTsmnxeyIHmIrgJBQs';
+    const third = '&key=YOURAPIKEY';
 
     var queryTransit =
       firstTransit + this.props.navigation.state.params.currLocation.latitude + ',' + this.props.navigation.state.params.currLocation.longitude
