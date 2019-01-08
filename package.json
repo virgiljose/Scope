@@ -1,0 +1,43 @@
+{
+  "name": "Scope",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "postinstall": "node_modules/.bin/rn-nodeify --install crypto --hack"
+  },
+  "dependencies": {
+    "geolib": "^2.0.24",
+    "node-uber": "^2.0.0",
+    "react": "16.6.3",
+    "react-api": "^1.0.5",
+    "react-native": "0.57.8",
+    "react-native-cardview": "^2.0.2",
+    "react-native-crypto": "^2.1.2",
+    "react-native-elements": "^0.19.1",
+    "react-native-gesture-handler": "^1.0.12",
+    "react-native-randombytes": "^2.3.0",
+    "react-native-star-rating": "^1.1.0",
+    "react-native-vector-icons": "^6.1.0",
+    "react-navigation": "^3.0.9",
+    "react-time-input": "0.0.19",
+    "uber-api": "^0.3.3"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.51.0",
+    "react-test-renderer": "16.6.3",
+    "rn-nodeify": "^6.0.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "react-native": {
+    "crypto": "react-native-crypto"
+  },
+  "browser": {
+    "crypto": "react-native-crypto"
+  }
+}
